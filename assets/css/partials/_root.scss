@@ -1,0 +1,177 @@
+///
+/// CSS properties (CSS variables)
+///
+
+@use '../modules/functions' as f;
+@use '../modules/colors' as c;
+@use '../modules/layout' as l;
+@use '../modules/font-stacks' as s;
+@use '../modules/typography' as t;
+
+:host,
+:root {
+
+	// Layout general
+	// ------------------------------------------------
+	--bl-spacing--x: #{l.$spacing_x};
+	--bl-spacing--y: #{l.$spacing_y};
+	--bl-spacing--x--half: calc( #{l.$spacing_x} / 2 );
+	--bl-spacing--y--half: calc( #{l.$spacing_y} / 2 );
+	--bl-spacing--x--third: calc( #{l.$spacing_x} / 3 );
+	--bl-spacing--y--third: calc( #{l.$spacing_y} / 3 );
+	--bl-spacing--x--quarter: calc( #{l.$spacing_x} / 4 );
+	--bl-spacing--y--quarter: calc( #{l.$spacing_y} / 4 );
+	--bl-spacing--x--plus-half: calc( #{l.$spacing_x} * 1.5 );
+	--bl-spacing--y--plus-half: calc( #{l.$spacing_y} * 1.5 );
+	--bl-spacing--x--double: calc( #{l.$spacing_x} * 2 );
+	--bl-spacing--y--double: calc( #{l.$spacing_y} * 2 );
+
+	--bl-wrap--general--max-width: 1280px;
+	--bl-wrap--general--margin: 0 auto;
+	--bl-wrap--general--padding: 0;
+
+	// Fonts
+	// ------------------------------------------------
+
+	// Font stacks
+	@each $type, $stack in s.$stacks {
+		--bl-fonts--#{$type}-stack: #{$stack};
+	}
+
+	// Font sizes
+	@each $name, $size in t.$sizes {
+		--bl-fonts--font-size--#{$name}: #{$size};
+	}
+
+	// Colors
+	// ------------------------------------------------
+
+	@each $name, $color in c.$general {
+		--bl-color--#{$name}: #{$color};
+	}
+	@each $set, $list in c.$theme {
+		@each $name, $color in $list {
+			--bl-color--#{$set}--#{$name}: #{$color};
+		}
+	}
+
+	// Borders
+	// ------------------------------------------------
+	--bl-box--border-style: solid;
+	--bl-box--border-width: 1px;
+	--bl-box--border-color: #{c.$gray_pale};
+	--bl-box--border-color--dark: #{c.$gray_medium};
+	--bl-box--border:
+		var( --bl-box--border-style )
+		var( --bl-box--border-width )
+		var( --bl-box--border-color );
+	--bl-box--border--dark:
+		var( --bl-box--border-style )
+		var( --bl-box--border-width )
+		var( --bl-box--border-color--dark );
+
+	// Body & general text
+	// ------------------------------------------------
+	--bl-element--margin-top: calc( var( --bl-spacing--y ) / 2 );
+	--bl-body--font-family: var( --bl-fonts--general-stack );
+	--bl-body--font-size: 1rem;
+	--bl-body--line-height: 1.525;
+	--bl-body--letter-spacing: 0.025em;
+;
+	--bl-body--bg-color: #ffffff;
+	--bl-body--bg-color--dark: #{c.$near_black};
+	--bl-body--text-color: #{f.darken( c.$theme_one_dark, 5% )};
+	--bl-body--text-color--dark: #{c.$off_white};
+
+	--bl-display--font-family: var( --bl-fonts--display-stack );
+	--bl-display--font-weight: 600;
+	--bl-display--letter-spacing: normal;
+
+	--bl-text-shadow: 0.05em 0.05em 0.05em #{rgba( $color: black, $alpha: 0.575 )};
+
+	// Headings.
+	--bl-heading-primary--line-height: 1;
+	--bl-heading-secondary--line-height: 1.2;
+
+	@media screen and ( max-width: l.$bp_sm ) {
+		--bl-body--font-size: 1.25rem;
+	}
+
+	// Links
+	// ------------------------------------------------
+	--bl-link--text-color: var( --bl-color--two--base );
+	--bl-link--text-color--dark: var( --bl-color--two--light );
+	--bl-link--action--text-color: var( --bl-color--two--light );
+	--bl-link--action--text-color--dark: var( --bl-color--two--base );
+
+	// Headings
+	// ------------------------------------------------
+	--bl-heading-primary--font-size: 2.25rem;
+	--bl-heading-primary--font-weight: 550;
+	--bl-heading-primary--letter-spacing: -0.025em;
+	--bl-heading-secondary--font-size: 1.5rem;
+	--bl-heading-secondary--font-weight: 600;
+	--bl-heading-primary--text-color: var( --bl-color--one--dark );
+	--bl-heading-secondary--text-color: var( --bl-color--one--dark );
+
+	// Media
+	// ------------------------------------------------
+	--bl-overlay--bg-color: #{rgba( $color: black, $alpha: 0.5 )};
+
+	// Site header
+	// ------------------------------------------------
+	--bl-site-header--padding:
+		calc( var( --bl-spacing--y ) / 2 )
+		var( --bl-spacing--x );
+	--bl-site-header--bg-color: var( --bl-color--one--base );
+	--bl-site-header--text-color: #ffffff;
+	--bl-site-title--font-weight: 470;
+	--bl-site-title--text-color: #ffffff;
+
+	// Page/Post content
+	// ------------------------------------------------
+	--cfe-page-wrap--padding: 0 var( --bl-spacing--x );
+	--bl-page-title--font-size: 3.25rem;
+	--bl-page-title--font-weight: 500;
+	--bl-page-title--line-height: 95%;
+	--bl-page-subtitle--margin: var( --bl-spacing--x--quarter ) 0 0 0;
+	--bl-page-subtitle--font-size: 1.25rem;
+	--bl-page-subtitle--font-weight: 600;
+	--bl-page-subtitle--line-height: 1.2;
+
+	@media screen and ( max-width: l.$bp_sm ) {
+		--cfe-page-wrap--padding: 0 var( --bl-spacing--x--half );
+		--bl-page-subtitle--margin: 0.5em 0 0 0;
+		--bl-page-subtitle--line-height: var( --bl-body--line-height, 1.5 );
+	}
+
+	// Front page
+	// ------------------------------------------------
+	--bl-front-intro--avatar--size: 200px;
+	@media screen and ( max-width: l.$bp_med ) {
+		--bl-front-intro--avatar--size: 320px;
+	}
+
+	// Aside/Widgets
+	// ------------------------------------------------
+	--bl-widget--heading--font-size: 1.75rem;
+	--bl-widget--heading--font-weight: 550;
+	--bl-owner-avatar--size: 80px;
+
+	@media screen and ( max-width: l.$bp_med ) {
+		--bl-widget--heading--font-size: 2rem;
+		--bl-owner-avatar--size: 160px;
+	}
+
+	// Footer
+	// ------------------------------------------------
+	--bl-site-info--margin: 0 var( --bl-spacing--x );
+	@media screen and ( max-width: l.$bp_sm ) {
+		--bl-site-info--margin: 0 var( --bl-spacing--x--half );
+	}
+
+	// Text selection
+	// ------------------------------------------------
+	--bl-selection--bg-color: #{f.lighten( c.$theme_two_base, 40% )};
+	--bl-selection--text-color: #{f.darken( c.$theme_one_base, 60% )};
+}
