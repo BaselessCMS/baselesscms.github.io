@@ -3,3 +3,11 @@
 ///
 
 @use 'partials/reset';
+@use 'partials/root';
+@use 'partials/generic';
+@use 'partials/forms';
+@use 'partials/header';
+@use 'partials/navigation';
+@use 'partials/content';
+@use 'partials/aside';
+@use 'partials/footer';
