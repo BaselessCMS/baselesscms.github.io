@@ -4,6 +4,41 @@
 {% include head.html %}
 
 <body>
-	{{ content }}
+	<header id="site-header" class="site-header" role="banner">
+		{% include header.html %}
+	</header>
+	<main>
+		{{ content }}
+	</main>
+	<aside></aside>
+	<footer id="site-footer" class="site-footer">
+		<p class="copyright">All content is copyright free.</p>
+	</footer>
+
+	<a href="#" id="to-top" class="hide-if-no-js" title="Back to Top">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path d="M136.5 185.1l116 117.8c4.7 4.7 4.7 12.3 0 17l-7.1 7.1c-4.7 4.7-12.3 4.7-17 0L128 224.7 27.6 326.9c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17l116-117.8c4.7-4.6 12.3-4.6 17 .1z"/></svg>
+	</a>
+
+	<script>
+	( function ($) {
+		$(document).ready( function() {
+			// Scroll to top button/link.
+			$( '#to-top' ).click( function(e) {
+				e.preventDefault();
+				$( 'html, body' ).animate( { scrollTop : 0 }, 450 );
+			});
+
+			$(window).scroll( function() {
+				var scroll = $(window).scrollTop();
+
+				if ( scroll >= 450 ) {
+					$( '#to-top' ).addClass( 'scrolled' );
+				} else {
+					$( '#to-top' ).removeClass( 'scrolled' );
+				}
+			});
+		});
+	})(jQuery);
+	</script>
 </body>
 </html>
