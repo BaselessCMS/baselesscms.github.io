@@ -1,0 +1,136 @@
+
+# Find more configuration in the `_data` directory.
+
+# Website settings
+is_user_page: true
+is_project_page: false
+remote_theme: baseless
+organization: "Baseless CMS"
+language: "en_US"
+locale : "en_US"
+title: "Baseless CMS"
+description: "Custom website design and build. Free products to build your own."
+author: "Baseless CMS"
+favicon: "favicon.png"
+timezone: "America/Los_Angeles"
+markdown: kramdown
+permalink: pretty
+
+# General
+body_class: "default-page"
+page_type: "WebPage"
+page_sidebar: true
+footer_image: "bamboo.jpg"
+
+# Collections
+collections:
+  category:
+    layout: "category"
+    directory: _category
+    permalink: /:collection/:title
+    output: true
+    singular: "category"
+    plural: "categories"
+    pagination:
+      enabled: true
+    paginate: 9
+  tag:
+    layout: "tag"
+    directory: _tag
+    permalink: /:collection/:title
+    output: true
+    singular: "tag"
+    plural: "tags"
+    pagination:
+      enabled: true
+    paginate: 9
+  products:
+    directory: _products
+    output: true
+    singular: "product"
+    plural: "products"
+
+# Specific defaults
+defaults:
+  - scope:
+      path: "" # empty string == all files in posts.
+      type: "posts"
+    values:
+      permalink: /:collection/:title/
+      layout: "post"
+      page_type: "BlogPosting"
+      author: "Greg Sweet"
+      comments: true
+      post_image: false # Fallback in templates.
+      post_thumb: false # Fallback in templates.
+      post_gallery: false # Heading to return true.
+  - scope:
+      path: "" # empty string == all files in category.
+      type: "category"
+    values:
+      layout: "category"
+      page_type: "CollectionPage"
+      cover: "banner"
+      page_image: false # Fallback in templates.
+      page_thumb: false # Fallback in templates.
+  - scope:
+      path: "" # empty string == all files in tag.
+      type: "tag"
+    values:
+      layout: "tag"
+      page_type: "CollectionPage"
+      cover: "banner"
+      page_image: false # Fallback in templates.
+      page_thumb: false # Fallback in templates.
+  - scope:
+      path: "" # empty string == all files in pages.
+      type: "pages"
+    values:
+      layout: "default"
+      page_type: "WebPage"
+      cover: "banner"
+      page_image: false # Fallback in templates.
+      page_thumb: false # Fallback in templates.
+  - scope:
+      path: "" # empty string == all files in products.
+      type: "products"
+    values:
+      layout: "product"
+      page_type: "WebPage"
+      cover: "banner"
+      page_image: false # Fallback in templates.
+      page_thumb: false # Fallback in templates.
+
+# Blog pages
+blog_singular: "post"
+blog_plural: "posts"
+blog_view: "list" # list, grid, or full
+blog_path: "/posts/"
+paginate_path: "/posts/page:num/"
+paginate: 9
+paged_style: "numeric" # numeric or standard
+
+# Related posts
+# String contains "category", "tag", or "default".
+# Disable section with "false".
+# Per page settings in post matter.
+related_by: "default"
+related_message: ""
+
+# Widgets
+projects_widget_limit: 5
+latest_widget_limit: 5
+
+# Footer content
+final_message: "CCDzine | No copyright. No synths!"
+
+# Additional functionality
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-include-cache
+  - jekyll-target-blank
+  - jekyll-gist
+  - jekyll-toc
+  - jemoji
