@@ -383,6 +383,89 @@ figcaption {
 	}
 }
 
+#to-top {
+	opacity: var( --bl-to-top--opacity, 0 );
+	pointer-events: var( --bl-to-top--pointer-events, none );
+	position: var( --bl-to-top--position, fixed );
+	top: var( --bl-to-top--top );
+	left: var( --bl-to-top--left );
+	right: var( --bl-to-top--right, 2rem );
+	bottom: var( --bl-to-top--bottom, 2rem );
+	width: var( --bl-to-top--width, 3rem );
+	height: var( --bl-to-top--height, 3rem );
+	display: var( --bl-to-top--display, flex );
+	align-items: var( --bl-to-top--align-items, center );
+	justify-content: var( --bl-to-top--justify-content, center );
+	background-color: var( --bl-button--bg-color );
+	border: var( --bl-form-element--border );
+	border-color: var( --bl-button--border-color, var( --bl-form--border-color ) );
+	color: var( --bl-to-top--text-color, var( --bl-button--text-color ) );
+	border-radius: var( --bl-to-top--border-radius, 50% );
+	transform: var( --bl-to-top--transform, translateY(0) );
+	transition: var( --bl-to-top--transition, opacity .5s, background-color .25s, transform .25s );
+
+	@media ( prefers-color-scheme: dark ) {
+		background-color: var( --bl-button--bg-color--dark );
+		border-color: var( --bl-button--border-color--dark, var( --bl-form--border-color--dark ) );
+		color: var( --bl-to-top--text-color--dark, var( --bl-button--text-color--dark ) );
+	}
+
+	@media screen and ( max-width: 640px ) {
+		display: none;
+	}
+
+	&.scrolled {
+		opacity: var( --bl-to-top--scrolled--opacity, 1 );
+		pointer-events: var( --bl-to-top--scrolled--pointer-events, all );
+	}
+
+	&:hover {
+		background-color: var( --bl-to-top--action--bg-color, var( --bl-button--action--bg-color, var( --bl-button--bg-color ) ) );
+		border-color: var( --bl-to-top--action--border-color, var( --bl-button--action--border-color, var( --bl-button--border-color ) ) );
+		color: var( --bl-to-top--action--text-color, var( --bl-button--action--text-color ) );
+		transform: var( --bl-to-top--action--transform, translateY( -0.25rem ) );
+
+		@media ( prefers-color-scheme: dark ) {
+			background-color: var( --bl-to-top--action--bg-color--dark, var( --bl-button--action--bg-color--dark, var( --bl-button--bg-color--dark ) ) );
+			border-color: var( --bl-to-top--action--border-color--dark, var( --bl-button--action--border-color--dark, var( --bl-button--border-color--dark ) ) );
+			color: var( --bl-to-top--action--text-color--dark, var( --bl-button--action--text-color--dark ) );
+		}
+	}
+
+	svg {
+		width: 2rem;
+		height: 2rem;
+		fill: var( --bl-to-top--svg--fill, currentColor );
+	}
+}
+
+pre {
+	white-space: pre-wrap;
+	white-space: break-spaces;
+	padding: 1em;
+	background-color: rgba( $color: black, $alpha: 0.0625 );
+
+	@media ( prefers-color-scheme: dark ) {
+		background-color: rgba( $color: white, $alpha: 0.0625 );
+	}
+
+	&.select {
+		user-select: all;
+	}
+}
+
+code {
+	background-color: rgba( $color: black, $alpha: 0.1 );
+
+	@media ( prefers-color-scheme: dark ) {
+		background-color: rgba( $color: white, $alpha: 0.1 );
+	}
+}
+
+code.select {
+	user-select: all;
+}
+
 // Text selection.
 ::-o-selection {
 	color: var( --bl-selection--text-color );

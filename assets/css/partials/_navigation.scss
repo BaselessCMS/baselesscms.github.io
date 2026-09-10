@@ -5,64 +5,64 @@
 @use '../modules/colors' as c;
 
 .nav-list {
-	list-style: var( --cfe-nav-list--style, none );
-	margin: var( --cfe-nav-list--margin, 0 );
-	padding: var( --cfe-nav-list--padding, 0 );
+	list-style: var( --bl-nav-list--style, none );
+	margin: var( --bl-nav-list--margin, 0 );
+	padding: var( --bl-nav-list--padding, 0 );
 }
 
 .site-navigation:not( .mobile-navigation ) {
 
 	@media screen and ( max-width: 960px ) {
-		display: var( --cfe-site-nav--mobile--display, none );
+		display: var( --bl-site-nav--mobile--display, none );
 	}
 
-	max-width: var( --cfe-site-nav--max-width );
+	max-width: var( --bl-site-nav--max-width );
 
 	ul {
-		margin: var( --cfe-site-nav--list--margin, 0 );
-		display: var( --cfe-site-nav--list--display, inline-flex );
-		gap: var( --cfe-site-nav--list--gap, 0.25em 1em );
-		justify-content: var( --cfe-site-nav--list--justify-content, flex-end );
-		flex-wrap: var( --cfe-site-nav--list--flex-wrap, wrap );
+		margin: var( --bl-site-nav--list--margin, 0 );
+		display: var( --bl-site-nav--list--display, inline-flex );
+		gap: var( --bl-site-nav--list--gap, 0.25em 1em );
+		justify-content: var( --bl-site-nav--list--justify-content, flex-end );
+		flex-wrap: var( --bl-site-nav--list--flex-wrap, wrap );
 
 		@media screen and ( max-width: 960px ) {
-			justify-content: var( --cfe-site-nav--list--justify-content--tablet, center );
+			justify-content: var( --bl-site-nav--list--justify-content--tablet, center );
 		}
 
 		li {
 			position: relative;
-			margin: var( --cfe-site-nav--item--margin, 0 );
-			font-family: var( --cfe-site-nav--item--font-family, var( --cfe-display--font-family ) );
-			font-size: var( --cfe-site-nav--item--font-size );
-			font-weight: var( --cfe-site-nav--item--font-weight, var( --cfe-display--font-weight ) );
-			font-style: var( --cfe-site-nav--font-style, normal );
-			font-variant: var( --cfe-site-nav--item--font-variant );
-			text-transform: var( --cfe-site-nav--item--text-transform );
-			letter-spacing: var( --cfe-site-nav--letter-spacing, var( --cfe-display--letter-spacing ) );
-			word-spacing: var( --cfe-site-nav--word-spacing, normal );
+			margin: var( --bl-site-nav--item--margin, 0 );
+			font-family: var( --bl-site-nav--item--font-family, var( --bl-display--font-family ) );
+			font-size: var( --bl-site-nav--item--font-size );
+			font-weight: var( --bl-site-nav--item--font-weight, var( --bl-display--font-weight ) );
+			font-style: var( --bl-site-nav--font-style, normal );
+			font-variant: var( --bl-site-nav--item--font-variant );
+			text-transform: var( --bl-site-nav--item--text-transform );
+			letter-spacing: var( --bl-site-nav--letter-spacing, var( --bl-display--letter-spacing ) );
+			word-spacing: var( --bl-site-nav--word-spacing, normal );
 			line-height: 1.2;
-			color: var( --cfe-site-nav--list--text-color, inherit );
+			color: var( --bl-site-nav--list--text-color, inherit );
 
 			@media ( prefers-color-scheme: dark ) {
-				color: var( --cfe-site-nav--list--text-color--dark, inherit );
+				color: var( --bl-site-nav--list--text-color--dark, inherit );
 			}
 
 			a {
 				position: relative;
 				font-weight: inherit;
-				text-decoration: var( --cfe-site-nav--item-link--text-decoration, none );
-				color: var( --cfe-site-nav--list--link--text-color, var( --cfe-link--text-color ) );
+				text-decoration: var( --bl-site-nav--item-link--text-decoration, none );
+				color: var( --bl-site-nav--list--link--text-color, var( --bl-link--text-color ) );
 
 				@media ( prefers-color-scheme: dark ) {
-					color: var( --cfe-site-nav--list--link--text-color--dark, var( --cfe-link--text-color--dark ) );
+					color: var( --bl-site-nav--list--link--text-color--dark, var( --bl-link--text-color--dark ) );
 				}
 
 				&:hover,
 				&:focus {
-					color: var( --cfe-site-nav--list--link--action--text-color, var( --cfe-site-nav--list--link--text-color, var( --cfe-link--action--text-color ) ) );
+					color: var( --bl-site-nav--list--link--action--text-color, var( --bl-site-nav--list--link--text-color, var( --bl-link--action--text-color ) ) );
 
 					@media ( prefers-color-scheme: dark ) {
-						color: var( --cfe-site-nav--list--link--action--text-color--dark, var( --cfe-site-nav--list--link--text-color--dark, var( --cfe-link--action--text-color--dark ) ) );
+						color: var( --bl-site-nav--list--link--action--text-color--dark, var( --bl-site-nav--list--link--text-color--dark, var( --bl-link--action--text-color--dark ) ) );
 					}
 				}
 			}
@@ -73,23 +73,23 @@
 						content: '';
 						position: absolute;
 						left: 0;
-						bottom: var( --cfe-site-nav--list--link--current--indicator--bottom, -0.3125em );
-						height: var( --cfe-site-nav--list--link--current--indicator--height, 0.125em );
-						width: var( --cfe-site-nav--list--link--current--indicator--width, 100% );
-						background-color: var( --cfe-site-nav--list--link--current--indicator--bg-color, var( --cfe-site-nav--list--link--text-color, var( --cfe-link--text-color ) ) );
+						bottom: var( --bl-site-nav--list--link--current--indicator--bottom, -0.3125em );
+						height: var( --bl-site-nav--list--link--current--indicator--height, 0.125em );
+						width: var( --bl-site-nav--list--link--current--indicator--width, 100% );
+						background-color: var( --bl-site-nav--list--link--current--indicator--bg-color, var( --bl-site-nav--list--link--text-color, var( --bl-link--text-color ) ) );
 
 						@media ( prefers-color-scheme: dark ) {
-							background-color: var( --cfe-site-nav--list--link--current--indicator--bg-color--dark, var( --cfe-site-nav--list--link--text-color--dark, var( --cfe-link--text-color--dark ) ) );
+							background-color: var( --bl-site-nav--list--link--current--indicator--bg-color--dark, var( --bl-site-nav--list--link--text-color--dark, var( --bl-link--text-color--dark ) ) );
 						}
 					}
 
 					&:hover,
 					&:focus {
 						&:before {
-							background-color: var( --cfe-site-nav--list--link--current--action--indicator--bg-color, var( --cfe-site-nav--list--link--action--text-color, var( --cfe-site-nav--list--link--text-color, var( --cfe-link--action--text-color ) ) ) );
+							background-color: var( --bl-site-nav--list--link--current--action--indicator--bg-color, var( --bl-site-nav--list--link--action--text-color, var( --bl-site-nav--list--link--text-color, var( --bl-link--action--text-color ) ) ) );
 
 							@media ( prefers-color-scheme: dark ) {
-								background-color: var( --cfe-site-nav--list--link--current--action--indicator--bg-color--dark, var( --cfe-site-nav--list--link--action--text-color--dark, var( --cfe-site-nav--list--link--text-color--dark, var( --cfe-link--action--text-color--dark ) ) ) );
+								background-color: var( --bl-site-nav--list--link--current--action--indicator--bg-color--dark, var( --bl-site-nav--list--link--action--text-color--dark, var( --bl-site-nav--list--link--text-color--dark, var( --bl-link--action--text-color--dark ) ) ) );
 							}
 						}
 					}
@@ -118,7 +118,7 @@
 
 				&:hover {
 					svg {
-						fill: var( --cfe-link--text-color );
+						fill: var( --bl-link--text-color );
 					}
 				}
 			}
@@ -135,12 +135,12 @@
 				transform: translateY( 0 );
 				opacity: 0;
 				transition: transform 0.25s, opacity 0.25s;
-				background-color: var( --cfe-site-nav--sub-list--bg-color );
-				border: solid 2px var( --cfe-site-nav--sub-list--border-color, var( --cfe-site-nav--sub-list--bg-color ) );
+				background-color: var( --bl-site-nav--sub-list--bg-color );
+				border: solid 2px var( --bl-site-nav--sub-list--border-color, var( --bl-site-nav--sub-list--bg-color ) );
 
 				@media ( prefers-color-scheme: dark ) {
-					background-color: var( --cfe-site-nav--sub-list--bg-color--dark );
-					border-color: var( --cfe-site-nav--sub-list--border-color--dark, var( --cfe-site-nav--sub-list--bg-color--dark ) );
+					background-color: var( --bl-site-nav--sub-list--bg-color--dark );
+					border-color: var( --bl-site-nav--sub-list--border-color--dark, var( --bl-site-nav--sub-list--bg-color--dark ) );
 				}
 
 				&:before {
@@ -167,10 +167,10 @@
 					border: solid 0.5rem transparent;
 
 					// Creates the triangle.
-					border-bottom-color: var( --cfe-site-nav--sub-list--bg-color );
+					border-bottom-color: var( --bl-site-nav--sub-list--bg-color );
 
 					@media ( prefers-color-scheme: dark ) {
-						border-bottom-color: var( --cfe-site-nav--sub-list--bg-color--dark );
+						border-bottom-color: var( --bl-site-nav--sub-list--bg-color--dark );
 					}
 
 					@media screen and ( max-width: 960px ) {
@@ -179,33 +179,33 @@
 				}
 
 				li {
-					margin: var( --cfe-site-nav--sub-item--margin, 0 );
+					margin: var( --bl-site-nav--sub-item--margin, 0 );
 					text-align: center;
-					color: var( --cfe-site-nav--sub-list--text-color, c.$white );
+					color: var( --bl-site-nav--sub-list--text-color, c.$white );
 
 					@media ( prefers-color-scheme: dark ) {
-						color: var( --cfe-site-nav--sub-list--text-color--dark, c.$white );
+						color: var( --bl-site-nav--sub-list--text-color--dark, c.$white );
 					}
 
 					a {
 						display: block;
 						padding: 0.5em 1em;
-						background-color: var( --cfe-site-nav--sub-list--bg-color, inherit );
-						color: var( --cfe-site-nav--sub-list--text-color, c.$white );
+						background-color: var( --bl-site-nav--sub-list--bg-color, inherit );
+						color: var( --bl-site-nav--sub-list--text-color, c.$white );
 
 						@media ( prefers-color-scheme: dark ) {
-							background-color: var( --cfe-site-nav--sub-list--bg-color-dark, inherit );
-							color: var( --cfe-site-nav--sub-list--text-color--dark, c.$white );
+							background-color: var( --bl-site-nav--sub-list--bg-color-dark, inherit );
+							color: var( --bl-site-nav--sub-list--text-color--dark, c.$white );
 						}
 
 						&:hover,
 						&:focus {
-							background-color: var( --cfe-site-nav--sub-list--action--bg-color );
-							color: var( --cfe-site-nav--sub-list--action--text-color, c.$white );
+							background-color: var( --bl-site-nav--sub-list--action--bg-color );
+							color: var( --bl-site-nav--sub-list--action--text-color, c.$white );
 
 							@media ( prefers-color-scheme: dark ) {
-								background-color: var( --cfe-site-nav--sub-list--action--bg-color--dark );
-								color: var( --cfe-site-nav--sub-list--action--text-color--dark, c.$white );
+								background-color: var( --bl-site-nav--sub-list--action--bg-color--dark );
+								color: var( --bl-site-nav--sub-list--action--text-color--dark, c.$white );
 							}
 						}
 					}
@@ -213,12 +213,12 @@
 					&.current-menu-item:not( .submenu-item ) {
 						a {
 							cursor: default;
-							background-color: var( --cfe-site-nav--sub-list--action--bg-color );
-							color: var( --cfe-site-nav--sub-list--action--text-color, c.$white );
+							background-color: var( --bl-site-nav--sub-list--action--bg-color );
+							color: var( --bl-site-nav--sub-list--action--text-color, c.$white );
 
 							@media ( prefers-color-scheme: dark ) {
-								background-color: var( --cfe-site-nav--sub-list--action--bg-color--dark );
-								color: var( --cfe-site-nav--sub-list--action--text-color--dark, c.$white );
+								background-color: var( --bl-site-nav--sub-list--action--bg-color--dark );
+								color: var( --bl-site-nav--sub-list--action--text-color--dark, c.$white );
 							}
 						}
 					}
@@ -302,24 +302,24 @@
 	}
 
 	.menu-toggle-text {
-		font-family: var( --cfe-site-nav--item--font-family );
-		font-size: var( --cfe-site-nav--item--font-size );
-		font-weight: var( --cfe-site-nav--item--font-weight );
-		text-transform: var( --cfe-site-nav--item--text-transform );
-		font-variant: var( --cfe-site-nav--item--font-variant );
+		font-family: var( --bl-site-nav--item--font-family );
+		font-size: var( --bl-site-nav--item--font-size );
+		font-weight: var( --bl-site-nav--item--font-weight );
+		text-transform: var( --bl-site-nav--item--text-transform );
+		font-variant: var( --bl-site-nav--item--font-variant );
 		line-height: 1.2;
-		color: var( --cfe-site-nav--list--link--text-color, var( --cfe-link--text-color ) );
+		color: var( --bl-site-nav--list--link--text-color, var( --bl-link--text-color ) );
 
 		@media ( prefers-color-scheme: dark ) {
-			color: var( --cfe-site-nav--list--link--text-color--dark, var( --cfe-link--text-color--dark ) );
+			color: var( --bl-site-nav--list--link--text-color--dark, var( --bl-link--text-color--dark ) );
 		}
 
 		&:hover,
 		&:focus {
-			color: var( --cfe-site-nav--list--link--action--text-color, var( --cfe-site-nav--list--link--text-color, var( --cfe-link--action--text-color ) ) );
+			color: var( --bl-site-nav--list--link--action--text-color, var( --bl-site-nav--list--link--text-color, var( --bl-link--action--text-color ) ) );
 
 			@media ( prefers-color-scheme: dark ) {
-				color: var( --cfe-site-nav--list--link--action--text-color--dark, var( --cfe-site-nav--list--link--text-color--dark, var( --cfe-link--action--text-color--dark ) ) );
+				color: var( --bl-site-nav--list--link--action--text-color--dark, var( --bl-site-nav--list--link--text-color--dark, var( --bl-link--action--text-color--dark ) ) );
 			}
 		}
 	}
@@ -328,22 +328,22 @@
 .template-full-cover,
 .has-front-page-slider {
 	#menu-toggle {
-		color: var( --cfe-site-nav--list--text-color, var( --cfe-cover--text-color, c.$white ) );
+		color: var( --bl-site-nav--list--text-color, var( --bl-cover--text-color, c.$white ) );
 
 		.menu-toggle-text {
-			color: var( --cfe-site-nav--list--text-color, var( --cfe-cover--text-color, c.$white ) );
-			text-shadow: var( --cfe-cover--text-shadow, var( --cfe-text-shadow ) );
+			color: var( --bl-site-nav--list--text-color, var( --bl-cover--text-color, c.$white ) );
+			text-shadow: var( --bl-cover--text-shadow, var( --bl-text-shadow ) );
 
 			@media ( prefers-color-scheme: dark ) {
-				color: var( --cfe-site-nav--list--text-color--dark, var( --cfe-cover--text-color--dark, c.$white ) );
+				color: var( --bl-site-nav--list--text-color--dark, var( --bl-cover--text-color--dark, c.$white ) );
 			}
 
 			&:hover,
 			&:focus {
-				color: var( --cfe-site-title--cover--link--action--text-color, var( --cfe-cover--text-color, c.$white ) );
+				color: var( --bl-site-title--cover--link--action--text-color, var( --bl-cover--text-color, c.$white ) );
 
 				@media ( prefers-color-scheme: dark ) {
-					color: var( --cfe-site-title--cover--link--action--text-color--dark, var( --cfe-cover--text-color--dark, c.$white ) );
+					color: var( --bl-site-title--cover--link--action--text-color--dark, var( --bl-cover--text-color--dark, c.$white ) );
 				}
 			}
 		}
@@ -370,15 +370,15 @@
 	width: 100%;
 	height: 100%;
 	overflow-y: auto;
-	padding: var( --cfe-spacing--vert, 2rem ) var( --cfe-spacing--horz, 2rem );
+	padding: var( --bl-spacing--vert, 2rem ) var( --bl-spacing--horz, 2rem );
 	flex-direction: column;
 	align-items: center;
-	background-color: var( --cfe-mobile-nav--bg-color, var( --cfe-body--bg-color ) );
-	color: var( --cfe-mobile-nav--text-color, var( --cfe-body--text-color ) );
+	background-color: var( --bl-mobile-nav--bg-color, var( --bl-body--bg-color ) );
+	color: var( --bl-mobile-nav--text-color, var( --bl-body--text-color ) );
 
 	@media ( prefers-color-scheme: dark ) {
-		background-color: var( --cfe-mobile-nav--bg-color--dark, var( --cfe-body--bg-color--dark ) );
-		color: var( --cfe-mobile-nav--text-color--dark, var( --cfe-body--text-color--dark ) );
+		background-color: var( --bl-mobile-nav--bg-color--dark, var( --bl-body--bg-color--dark ) );
+		color: var( --bl-mobile-nav--text-color--dark, var( --bl-body--text-color--dark ) );
 	}
 }
 
@@ -404,50 +404,50 @@
 	ul {
 		list-style: none;
 		width: auto;
-		margin: var( --cfe-mobile-nav--menu--margin, var( --cfe-spacing--horz, 2rem ) 0 0 0 );
-		padding: var( --cfe-mobile-nav--menu--margin, 0 );
+		margin: var( --bl-mobile-nav--menu--margin, var( --bl-spacing--horz, 2rem ) 0 0 0 );
+		padding: var( --bl-mobile-nav--menu--margin, 0 );
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		gap: 0.5em;
-		font-size: var( --cfe-mobile-nav--font-size, 1.5rem );
+		font-size: var( --bl-mobile-nav--font-size, 1.5rem );
 
 		ul {
-			margin: var( --cfe-mobile-nav--submenu--margin, 0 );
-			padding: var( --cfe-mobile-nav--submenu--margin, 0.5em 1em 0 1em );
+			margin: var( --bl-mobile-nav--submenu--margin, 0 );
+			padding: var( --bl-mobile-nav--submenu--margin, 0.5em 1em 0 1em );
 		}
 	}
 
 	li {
 		position: relative;
-		margin: var( --cfe-mobile-nav--item--margin, 0 );
-		font-family: var( --cfe-mobile-nav--item--font-family );
-		font-size: var( --cfe-mobile-nav--item--font-size, 1.5rem );
-		font-weight: var( --cfe-mobile-nav--item--font-weight );
-		text-transform: var( --cfe-mobile-nav--item--text-transform );
-		font-variant: var( --cfe-mobile-nav--item--font-variant );
+		margin: var( --bl-mobile-nav--item--margin, 0 );
+		font-family: var( --bl-mobile-nav--item--font-family );
+		font-size: var( --bl-mobile-nav--item--font-size, 1.5rem );
+		font-weight: var( --bl-mobile-nav--item--font-weight );
+		text-transform: var( --bl-mobile-nav--item--text-transform );
+		font-variant: var( --bl-mobile-nav--item--font-variant );
 		line-height: 1.2;
-		color: var( --cfe-mobile-nav--list--text-color, inherit );
+		color: var( --bl-mobile-nav--list--text-color, inherit );
 
 		@media ( prefers-color-scheme: dark ) {
-			color: var( --cfe-mobile-nav--list--text-color--dark, inherit );
+			color: var( --bl-mobile-nav--list--text-color--dark, inherit );
 		}
 
 		a {
 			font-weight: inherit;
-			text-decoration: var( --cfe-mobile-nav--item-link--text-decoration, none );
-			color: var( --cfe-mobile-nav--list--link--text-color, var( --cfe-link--text-color ) );
+			text-decoration: var( --bl-mobile-nav--item-link--text-decoration, none );
+			color: var( --bl-mobile-nav--list--link--text-color, var( --bl-link--text-color ) );
 
 			@media ( prefers-color-scheme: dark ) {
-				color: var( --cfe-mobile-nav--list--link--text-color--dark, var( --cfe-link--text-color--dark ) );
+				color: var( --bl-mobile-nav--list--link--text-color--dark, var( --bl-link--text-color--dark ) );
 			}
 
 			&:hover,
 			&:focus {
-				color: var( --cfe-mobile-nav--list--link--action--text-color, var( --cfe-mobile-nav--list--link--text-color, var( --cfe-link--action--text-color ) ) );
+				color: var( --bl-mobile-nav--list--link--action--text-color, var( --bl-mobile-nav--list--link--text-color, var( --bl-link--action--text-color ) ) );
 
 				@media ( prefers-color-scheme: dark ) {
-					color: var( --cfe-mobile-nav--list--link--action--text-color--dark, var( --cfe-mobile-nav--list--link--text-color--dark, var( --cfe-link--action--text-color--dark ) ) );
+					color: var( --bl-mobile-nav--list--link--action--text-color--dark, var( --bl-mobile-nav--list--link--text-color--dark, var( --bl-link--action--text-color--dark ) ) );
 				}
 			}
 		}
@@ -460,27 +460,27 @@
 		.site-navigation {
 			ul {
 				li {
-					color: var( --cfe-site-nav--list--text-color, var( --cfe-cover--text-color, c.$white ) );
-					text-shadow: var( --cfe-cover--text-shadow, var( --cfe-text-shadow ) );
+					color: var( --bl-site-nav--list--text-color, var( --bl-cover--text-color, c.$white ) );
+					text-shadow: var( --bl-cover--text-shadow, var( --bl-text-shadow ) );
 
 					@media ( prefers-color-scheme: dark ) {
-						color: var( --cfe-site-nav--list--text-color--dark, var( --cfe-cover--text-color--dark, c.$white ) );
+						color: var( --bl-site-nav--list--text-color--dark, var( --bl-cover--text-color--dark, c.$white ) );
 					}
 
 					a {
-						color: var( --cfe-site-nav--list--text-color, var( --cfe-cover--text-color, c.$white ) );
-						text-shadow: var( --cfe-cover--text-shadow, var( --cfe-text-shadow ) );
+						color: var( --bl-site-nav--list--text-color, var( --bl-cover--text-color, c.$white ) );
+						text-shadow: var( --bl-cover--text-shadow, var( --bl-text-shadow ) );
 
 						@media ( prefers-color-scheme: dark ) {
-							color: var( --cfe-site-nav--list--text-color--dark, var( --cfe-cover--text-color--dark, c.$white ) );
+							color: var( --bl-site-nav--list--text-color--dark, var( --bl-cover--text-color--dark, c.$white ) );
 						}
 
 						&:hover,
 						&:focus {
-							color: var( --cfe-site-title--cover--link--action--text-color, var( --cfe-cover--text-color, c.$white ) );
+							color: var( --bl-site-title--cover--link--action--text-color, var( --bl-cover--text-color, c.$white ) );
 
 							@media ( prefers-color-scheme: dark ) {
-								color: var( --cfe-site-title--cover--link--action--text-color--dark, var( --cfe-cover--text-color--dark, c.$white ) );
+								color: var( --bl-site-title--cover--link--action--text-color--dark, var( --bl-cover--text-color--dark, c.$white ) );
 							}
 						}
 					}
@@ -488,20 +488,20 @@
 					&.current-menu-item:not( .submenu-item ) {
 						& > a {
 							&:before {
-								background-color: var( --cfe-site-nav--list--text-color, var( --cfe-cover--text-color, c.$white ) );
+								background-color: var( --bl-site-nav--list--text-color, var( --bl-cover--text-color, c.$white ) );
 
 								@media ( prefers-color-scheme: dark ) {
-									background-color: var( --cfe-site-nav--list--text-color--dark, var( --cfe-cover--text-color--dark, c.$white ) );
+									background-color: var( --bl-site-nav--list--text-color--dark, var( --bl-cover--text-color--dark, c.$white ) );
 								}
 							}
 
 							&:hover,
 							&:focus {
 								&:before {
-									background-color: var( --cfe-site-title--cover--link--action--text-color, var( --cfe-cover--text-color, c.$white ) );
+									background-color: var( --bl-site-title--cover--link--action--text-color, var( --bl-cover--text-color, c.$white ) );
 
 									@media ( prefers-color-scheme: dark ) {
-										background-color: var( --cfe-site-title--cover--link--action--text-color--dark, var( --cfe-cover--text-color--dark, c.$white ) );
+										background-color: var( --bl-site-title--cover--link--action--text-color--dark, var( --bl-cover--text-color--dark, c.$white ) );
 									}
 								}
 							}
@@ -525,12 +525,12 @@
 						svg {
 							height: 1em;
 							vertical-align: middle;
-							fill: var( --cfe-site-nav--list--text-color, var( --cfe-cover--text-color, c.$white ) );
+							fill: var( --bl-site-nav--list--text-color, var( --bl-cover--text-color, c.$white ) );
 						}
 
 						&:hover {
 							svg {
-								fill: var( --cfe-site-title--cover--link--action--text-color, var( --cfe-cover--text-color, c.$white ) );
+								fill: var( --bl-site-title--cover--link--action--text-color, var( --bl-cover--text-color, c.$white ) );
 							}
 						}
 					}
@@ -538,27 +538,27 @@
 
 				ul {
 					li {
-						color: var( --cfe-site-nav--sub-list--text-color, c.$white );
-						text-shadow: var( --cfe-site-nav--sub-list--text-shadow, none );
+						color: var( --bl-site-nav--sub-list--text-color, c.$white );
+						text-shadow: var( --bl-site-nav--sub-list--text-shadow, none );
 
 						@media ( prefers-color-scheme: dark ) {
-							color: var( --cfe-site-nav--sub-list--text-color--dark, c.$white );
+							color: var( --bl-site-nav--sub-list--text-color--dark, c.$white );
 						}
 
 						a {
-							color: var( --cfe-site-nav--sub-list--text-color, c.$white );
-							text-shadow: var( --cfe-site-nav--sub-list--text-shadow, none );
+							color: var( --bl-site-nav--sub-list--text-color, c.$white );
+							text-shadow: var( --bl-site-nav--sub-list--text-shadow, none );
 
 							@media ( prefers-color-scheme: dark ) {
-								color: var( --cfe-site-nav--sub-list--text-color--dark, c.$white );
+								color: var( --bl-site-nav--sub-list--text-color--dark, c.$white );
 							}
 
 							&:hover,
 							&:focus {
-								color: var( --cfe-site-nav--sub-list--text-color, c.$white );
+								color: var( --bl-site-nav--sub-list--text-color, c.$white );
 
 								@media ( prefers-color-scheme: dark ) {
-									color: var( --cfe-site-nav--sub-list--text-color--dark, c.$white );
+									color: var( --bl-site-nav--sub-list--text-color--dark, c.$white );
 								}
 							}
 						}
@@ -577,27 +577,27 @@
 				.site-navigation {
 					ul {
 						li {
-							color: var( --cfe-site-nav--list--text-color );
+							color: var( --bl-site-nav--list--text-color );
 							text-shadow: none;
 
 							@media ( prefers-color-scheme: dark ) {
-								color: var( --cfe-site-nav--list--text-color--dark );
+								color: var( --bl-site-nav--list--text-color--dark );
 							}
 
 							a {
-								color: var( --cfe-site-nav--list--link--text-color, var( --cfe-link--text-color ) );
+								color: var( --bl-site-nav--list--link--text-color, var( --bl-link--text-color ) );
 								text-shadow: none;
 
 								@media ( prefers-color-scheme: dark ) {
-									color: var( --cfe-site-nav--list--link--text-color--dark, var( --cfe-link--text-color--dark ) );
+									color: var( --bl-site-nav--list--link--text-color--dark, var( --bl-link--text-color--dark ) );
 								}
 
 								&:hover,
 								&:focus {
-									color: var( --cfe-site-nav--list--link--action--text-color, var( --cfe-site-nav--list--link--text-color, var( --cfe-link--action--text-color ) ) );
+									color: var( --bl-site-nav--list--link--action--text-color, var( --bl-site-nav--list--link--text-color, var( --bl-link--action--text-color ) ) );
 
 									@media ( prefers-color-scheme: dark ) {
-										color: var( --cfe-site-nav--list--link--action--text-color--dark, var( --cfe-site-nav--list--link--text-color--dark, var( --cfe-link--action--text-color--dark ) ) );
+										color: var( --bl-site-nav--list--link--action--text-color--dark, var( --bl-site-nav--list--link--text-color--dark, var( --bl-link--action--text-color--dark ) ) );
 									}
 								}
 							}
@@ -605,20 +605,20 @@
 							&.current-menu-item:not( .submenu-item ) {
 								& > a {
 									&:before {
-										background-color: var( --cfe-site-nav--list--link--current--indicator--bg-color, var( --cfe-site-nav--list--link--text-color, var( --cfe-link--text-color ) ) );
+										background-color: var( --bl-site-nav--list--link--current--indicator--bg-color, var( --bl-site-nav--list--link--text-color, var( --bl-link--text-color ) ) );
 
 										@media ( prefers-color-scheme: dark ) {
-											background-color: var( --cfe-site-nav--list--link--current--indicator--bg-color--dark, var( --cfe-site-nav--list--link--text-color--dark, var( --cfe-link--text-color--dark ) ) );
+											background-color: var( --bl-site-nav--list--link--current--indicator--bg-color--dark, var( --bl-site-nav--list--link--text-color--dark, var( --bl-link--text-color--dark ) ) );
 										}
 									}
 
 									&:hover,
 									&:focus {
 										&:before {
-											background-color: var( --cfe-site-nav--list--link--current--action--indicator--bg-color, var( --cfe-site-nav--list--link--action--text-color, var( --cfe-site-nav--list--link--text-color, var( --cfe-link--action--text-color ) ) ) );
+											background-color: var( --bl-site-nav--list--link--current--action--indicator--bg-color, var( --bl-site-nav--list--link--action--text-color, var( --bl-site-nav--list--link--text-color, var( --bl-link--action--text-color ) ) ) );
 
 											@media ( prefers-color-scheme: dark ) {
-												background-color: var( --cfe-site-nav--list--link--current--action--indicator--bg-color--dark, var( --cfe-site-nav--list--link--action--text-color--dark, var( --cfe-site-nav--list--link--text-color--dark, var( --cfe-link--action--text-color--dark ) ) ) );
+												background-color: var( --bl-site-nav--list--link--current--action--indicator--bg-color--dark, var( --bl-site-nav--list--link--action--text-color--dark, var( --bl-site-nav--list--link--text-color--dark, var( --bl-link--action--text-color--dark ) ) ) );
 											}
 										}
 									}
@@ -645,25 +645,25 @@
 
 						ul {
 							li {
-								color: var( --cfe-site-nav--sub-list--text-color );
+								color: var( --bl-site-nav--sub-list--text-color );
 
 								@media ( prefers-color-scheme: dark ) {
-									color: var( --cfe-site-nav--sub-list--text-color--dark );
+									color: var( --bl-site-nav--sub-list--text-color--dark );
 								}
 
 								a {
-									color: var( --cfe-site-nav--sub-list--text-color );
+									color: var( --bl-site-nav--sub-list--text-color );
 
 									@media ( prefers-color-scheme: dark ) {
-										color: var( --cfe-site-nav--sub-list--text-color--dark );
+										color: var( --bl-site-nav--sub-list--text-color--dark );
 									}
 
 									&:hover,
 									&:focus {
-										color: var( --cfe-site-nav--sub-list--text-color );
+										color: var( --bl-site-nav--sub-list--text-color );
 
 										@media ( prefers-color-scheme: dark ) {
-											color: var( --cfe-site-nav--sub-list--text-color--dark );
+											color: var( --bl-site-nav--sub-list--text-color--dark );
 										}
 									}
 								}
@@ -677,18 +677,18 @@
 }
 
 .page-navigation {
-	width: var( --cfe-page-nav--width, 100% );
-	margin: var( --cfe-page-nav--margin, 2rem 0 0 0 );
+	width: var( --bl-page-nav--width, 100% );
+	margin: var( --bl-page-nav--margin, 2rem 0 0 0 );
 
 	.pagination-list {
-		width: var( --cfe-pagination-list--width, 100% );
-		display: var( --cfe-pagination-list--display, flex );
-		gap: var( --cfe-pagination-list--gap, 0 0.5em );
+		width: var( --bl-pagination-list--width, 100% );
+		display: var( --bl-pagination-list--display, flex );
+		gap: var( --bl-pagination-list--gap, 0 0.5em );
 		justify-content: center;
 
 		&.pagination-prev-next,
 		&.pagination-titles {
-			justify-content: var( --cfe-pagination-list--prev-next--justify-content, space-between );
+			justify-content: var( --bl-pagination-list--prev-next--justify-content, space-between );
 
 			li {
 				display: inline-flex;
@@ -703,9 +703,9 @@
 
 		&.pagination-prev-next {
 			a {
-				display: var( --cfe-pagination-list--prev-next--link--display, inline-flex );
-				align-items: var( --cfe-pagination-list--prev-next--link--align-items, center );
-				gap: var( --cfe-pagination-list--prev-next--link--gap, 0.5em );
+				display: var( --bl-pagination-list--prev-next--link--display, inline-flex );
+				align-items: var( --bl-pagination-list--prev-next--link--align-items, center );
+				gap: var( --bl-pagination-list--prev-next--link--gap, 0.5em );
 
 				.theme-icon {
 					transform: translateY( 1px );
@@ -716,12 +716,12 @@
 		&.pagination-titles {
 			a {
 				width: 100%;
-				display: var( --cfe-pagination-list--titles--link--display, inline-flex );
-				align-items: var( --cfe-pagination-list--titles--link--align-items, center );
-				gap: var( --cfe-pagination-list--titles--link--gap, 0.5em );
-				font-size: var( --cfe-pagination-list--titles--link--font-size, var( --cfe-font-size, 1rem ) );
-				font-weight: var( --cfe-pagination-list--titles--link--font-weight, 600 );
-				text-decoration: var( --cfe-pagination-list--titles--link--text-decoration, none );
+				display: var( --bl-pagination-list--titles--link--display, inline-flex );
+				align-items: var( --bl-pagination-list--titles--link--align-items, center );
+				gap: var( --bl-pagination-list--titles--link--gap, 0.5em );
+				font-size: var( --bl-pagination-list--titles--link--font-size, var( --bl-font-size, 1rem ) );
+				font-weight: var( --bl-pagination-list--titles--link--font-weight, 600 );
+				text-decoration: var( --bl-pagination-list--titles--link--text-decoration, none );
 
 				.theme-icon {
 					transform: translateY( -1px );
@@ -734,31 +734,31 @@
 			a {
 				display: inline-block;
 				padding: 0 0.5em;
-				text-decoration: var( --cfe-pagination-list--numeric--link--text-decoration, none );
-				font-weight: var( --cfe-pagination-list--numeric--link--font-weight, inherit );
-				border: var( --cfe-pagination-list--numeric--link--border, solid 1px transparent );
+				text-decoration: var( --bl-pagination-list--numeric--link--text-decoration, none );
+				font-weight: var( --bl-pagination-list--numeric--link--font-weight, inherit );
+				border: var( --bl-pagination-list--numeric--link--border, solid 1px transparent );
 
 				@media ( prefers-color-scheme: dark ) {
-					border: var( --cfe-pagination-list--numeric--link--border--dark );
+					border: var( --bl-pagination-list--numeric--link--border--dark );
 				}
 
 				&:hover,
 				&:focus {
-					color: var( --cfe-link--text-color );
-					border: var( --cfe-pagination-list--numeric--link--active--border, solid 1px var( --cfe-link--action--text-color ) );
+					color: var( --bl-link--text-color );
+					border: var( --bl-pagination-list--numeric--link--active--border, solid 1px var( --bl-link--action--text-color ) );
 
 					@media ( prefers-color-scheme: dark ) {
-						color: var( --cfe-link--text-color--dark );
-						border: var( --cfe-pagination-list--numeric--link--active--border--dark, solid 1px var( --cfe-link--action--text-color--dark ) );
+						color: var( --bl-link--text-color--dark );
+						border: var( --bl-pagination-list--numeric--link--active--border--dark, solid 1px var( --bl-link--action--text-color--dark ) );
 					}
 				}
 
 				&.page-active {
-					font-weight: var( --cfe-pagination-list--numeric--link--active--font-weight, 600 );
-					border: var( --cfe-pagination-list--numeric--link--active--border, solid 1px var( --cfe-link--action--text-color ) );
+					font-weight: var( --bl-pagination-list--numeric--link--active--font-weight, 600 );
+					border: var( --bl-pagination-list--numeric--link--active--border, solid 1px var( --bl-link--action--text-color ) );
 
 					@media ( prefers-color-scheme: dark ) {
-						border: var( --cfe-pagination-list--numeric--link--active--border--dark, solid 1px var( --cfe-link--action--text-color--dark ) );
+						border: var( --bl-pagination-list--numeric--link--active--border--dark, solid 1px var( --bl-link--action--text-color--dark ) );
 					}
 				}
 
@@ -791,7 +791,7 @@
 
 .site-footer {
 	.social-navigation {
-		margin: calc( var( --cfe-spacing--vert ) / 2 ) 0;
+		margin: calc( var( --bl-spacing--vert ) / 2 ) 0;
 
 		.social-nav-list {
 			justify-content: center;

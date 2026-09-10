@@ -130,7 +130,7 @@
 
 	// Page/Post content
 	// ------------------------------------------------
-	--cfe-page-wrap--padding: 0 var( --bl-spacing--x );
+	--bl-page-wrap--padding: 0 var( --bl-spacing--x );
 	--bl-page-title--font-size: 3.25rem;
 	--bl-page-title--font-weight: 500;
 	--bl-page-title--line-height: 95%;
@@ -140,7 +140,7 @@
 	--bl-page-subtitle--line-height: 1.2;
 
 	@media screen and ( max-width: l.$bp_sm ) {
-		--cfe-page-wrap--padding: 0 var( --bl-spacing--x--half );
+		--bl-page-wrap--padding: 0 var( --bl-spacing--x--half );
 		--bl-page-subtitle--margin: 0.5em 0 0 0;
 		--bl-page-subtitle--line-height: var( --bl-body--line-height, 1.5 );
 	}
