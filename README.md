@@ -1,2 +1,1 @@
-# baselesscms.github.io
-Baseless CMS website
+# Baseless CMS website
