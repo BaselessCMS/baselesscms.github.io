@@ -2,9 +2,19 @@
 /// Main stylesheet
 ///
 
+// Browser reset.
 @use 'partials/reset';
+
+// Access font files
+@use 'partials/font-face';
+
+// Custom properties.
 @use 'partials/root';
+
+// Generic styles.
 @use 'partials/generic';
+
+// Specific styles.
 @use 'partials/forms';
 @use 'partials/header';
 @use 'partials/navigation';
