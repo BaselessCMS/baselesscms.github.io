@@ -419,9 +419,9 @@ b, strong, optgroup {
   --bl-color--notify: #ee6600;
   --bl-color--warning: #ffdd00;
   --bl-color--success: #00aa00;
-  --bl-color--one--base: #1447e6;
-  --bl-color--one--light: #9c8ba2;
-  --bl-color--one--dark: #90c5ff;
+  --bl-color--one--base: #0069a8;
+  --bl-color--one--light: #0084d1;
+  --bl-color--one--dark: #024a70;
   --bl-color--two--base: #a0b43c;
   --bl-color--two--light: #a9bb4f;
   --bl-color--two--dark: #90a236;
@@ -444,7 +444,7 @@ b, strong, optgroup {
   --bl-body--letter-spacing: 0.025em;
   --bl-body--bg-color: #ffffff;
   --bl-body--bg-color--dark: #1e1e1e;
-  --bl-body--text-color: #89bbf2;
+  --bl-body--text-color: #02466a;
   --bl-body--text-color--dark: #f1f1f1;
   --bl-display--font-family: var( --bl-fonts--display-stack );
   --bl-display--font-weight: 600;
@@ -533,7 +533,7 @@ b, strong, optgroup {
 :host,
 :root {
   --bl-selection--bg-color: #c6d28a;
-  --bl-selection--text-color: #081c5c;
+  --bl-selection--text-color: #002a43;
 }
 @keyframes spinner {
   from {
