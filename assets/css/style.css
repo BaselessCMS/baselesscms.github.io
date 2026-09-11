@@ -286,42 +286,42 @@ b, strong, optgroup {
   font-weight: 300 900;
   font-style: normal;
   font-display: swap;
-  src: url(../fonts/red-hat-display.woff2) format("woff2");
+  src: url(../../fonts/red-hat-display.woff2) format("woff2");
 }
 @font-face {
   font-family: "Red Hat Display";
   font-weight: 300 900;
   font-style: italic;
   font-display: swap;
-  src: url(../fonts/red-hat-display-italic.woff2) format("woff2");
+  src: url(../../fonts/red-hat-display-italic.woff2) format("woff2");
 }
 @font-face {
   font-family: "Red Hat Text";
   font-weight: 300 700;
   font-style: normal;
   font-display: swap;
-  src: url(../fonts/red-hat-text.woff2) format("woff2");
+  src: url(../../fonts/red-hat-text.woff2) format("woff2");
 }
 @font-face {
   font-family: "Red Hat Text";
   font-weight: 300 700;
   font-style: italic;
   font-display: swap;
-  src: url(../fonts/red-hat-text-italic.woff2) format("woff2");
+  src: url(../../fonts/red-hat-text-italic.woff2) format("woff2");
 }
 @font-face {
   font-family: "Red Hat Mono";
   font-weight: 300 700;
   font-style: normal;
   font-display: swap;
-  src: url(../fonts/red-hat-mono.woff2) format("woff2");
+  src: url(../../fonts/red-hat-mono.woff2) format("woff2");
 }
 @font-face {
   font-family: "Red Hat Mono";
   font-weight: 300 700;
   font-style: italic;
   font-display: swap;
-  src: url(../fonts/red-hat-mono-italic.woff2) format("woff2");
+  src: url(../../fonts/red-hat-mono-italic.woff2) format("woff2");
 }
 :host,
 :root {
@@ -419,9 +419,9 @@ b, strong, optgroup {
   --bl-color--notify: #ee6600;
   --bl-color--warning: #ffdd00;
   --bl-color--success: #00aa00;
-  --bl-color--one--base: #846f8b;
+  --bl-color--one--base: #1447e6;
   --bl-color--one--light: #9c8ba2;
-  --bl-color--one--dark: #69586f;
+  --bl-color--one--dark: #90c5ff;
   --bl-color--two--base: #a0b43c;
   --bl-color--two--light: #a9bb4f;
   --bl-color--two--dark: #90a236;
@@ -444,7 +444,7 @@ b, strong, optgroup {
   --bl-body--letter-spacing: 0.025em;
   --bl-body--bg-color: #ffffff;
   --bl-body--bg-color--dark: #1e1e1e;
-  --bl-body--text-color: #645469;
+  --bl-body--text-color: #89bbf2;
   --bl-body--text-color--dark: #f1f1f1;
   --bl-display--font-family: var( --bl-fonts--display-stack );
   --bl-display--font-weight: 600;
@@ -533,7 +533,7 @@ b, strong, optgroup {
 :host,
 :root {
   --bl-selection--bg-color: #c6d28a;
-  --bl-selection--text-color: #352c38;
+  --bl-selection--text-color: #081c5c;
 }
 @keyframes spinner {
   from {
