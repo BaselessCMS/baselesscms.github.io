@@ -143,13 +143,6 @@
 		--bl-page-subtitle--line-height: var( --bl-body--line-height, 1.5 );
 	}
 
-	// Front page
-	// ------------------------------------------------
-	--bl-front-intro--avatar--size: 200px;
-	@media screen and ( max-width: l.$bp_med ) {
-		--bl-front-intro--avatar--size: 320px;
-	}
-
 	// Aside/Widgets
 	// ------------------------------------------------
 	--bl-widget--heading--font-size: 1.75rem;

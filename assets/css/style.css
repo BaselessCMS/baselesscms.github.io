@@ -496,16 +496,6 @@ b, strong, optgroup {
 }
 :host,
 :root {
-  --bl-front-intro--avatar--size: 200px;
-}
-@media screen and (max-width: 800px) {
-  :host,
-  :root {
-    --bl-front-intro--avatar--size: 320px;
-  }
-}
-:host,
-:root {
   --bl-widget--heading--font-size: 1.75rem;
   --bl-widget--heading--font-weight: 550;
   --bl-owner-avatar--size: 80px;
