@@ -286,42 +286,42 @@ b, strong, optgroup {
   font-weight: 300 900;
   font-style: normal;
   font-display: swap;
-  src: url(../../fonts/red-hat-display.woff2) format("woff2");
+  src: url(../fonts/red-hat-display.woff2) format("woff2");
 }
 @font-face {
   font-family: "Red Hat Display";
   font-weight: 300 900;
   font-style: italic;
   font-display: swap;
-  src: url(../../fonts/red-hat-display-italic.woff2) format("woff2");
+  src: url(../fonts/red-hat-display-italic.woff2) format("woff2");
 }
 @font-face {
   font-family: "Red Hat Text";
   font-weight: 300 700;
   font-style: normal;
   font-display: swap;
-  src: url(../../fonts/red-hat-text.woff2) format("woff2");
+  src: url(../fonts/red-hat-text.woff2) format("woff2");
 }
 @font-face {
   font-family: "Red Hat Text";
   font-weight: 300 700;
   font-style: italic;
   font-display: swap;
-  src: url(../../fonts/red-hat-text-italic.woff2) format("woff2");
+  src: url(../fonts/red-hat-text-italic.woff2) format("woff2");
 }
 @font-face {
   font-family: "Red Hat Mono";
   font-weight: 300 700;
   font-style: normal;
   font-display: swap;
-  src: url(../../fonts/red-hat-mono.woff2) format("woff2");
+  src: url(../fonts/red-hat-mono.woff2) format("woff2");
 }
 @font-face {
   font-family: "Red Hat Mono";
   font-weight: 300 700;
   font-style: italic;
   font-display: swap;
-  src: url(../../fonts/red-hat-mono-italic.woff2) format("woff2");
+  src: url(../fonts/red-hat-mono-italic.woff2) format("woff2");
 }
 :host,
 :root {
@@ -1465,6 +1465,7 @@ h3 + .search-form {
 .site-header {
   position: relative;
   z-index: 500;
+  padding: var(--bl-site-header--padding);
   background-color: var(--bl-site-header--bg-color, var(--bl-body--bg-color));
 }
 @media (prefers-color-scheme: dark) {

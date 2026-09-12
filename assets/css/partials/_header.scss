@@ -7,6 +7,7 @@
 .site-header {
 	position: relative;
 	z-index: 500;
+	padding: var( --bl-site-header--padding );
 	background-color: var( --bl-site-header--bg-color, var( --bl-body--bg-color ) );
 
 	@media ( prefers-color-scheme: dark ) {
