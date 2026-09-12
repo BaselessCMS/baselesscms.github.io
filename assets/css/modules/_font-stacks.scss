@@ -4,19 +4,16 @@
 
 // Font stacks
 // ------------------------------------------------
-$stack_general: '"Red Hat Display"', -apple-system, BlinkMacSystemFont, '"Segoe UI"', '"Roboto"', '"Oxygen-Sans"', '"Ubuntu"', '"Cantarell"', '"Helvetica Neue"', sans-serif, '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"' !default;
+$general: '"Red Hat Text"', -apple-system, BlinkMacSystemFont, '"Segoe UI"', '"Roboto"', '"Oxygen-Sans"', '"Ubuntu"', '"Cantarell"', '"Helvetica Neue"', sans-serif, '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"' !default;
 
-$stack_secondary: '"Red Hat Text"', -apple-system, BlinkMacSystemFont, '"Segoe UI"', '"Roboto"', '"Oxygen-Sans"', '"Ubuntu"', '"Cantarell"', '"Helvetica Neue"', sans-serif, '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"' !default;
+$display: '"Red Hat Display"', -apple-system, BlinkMacSystemFont, '"Segoe UI"', '"Roboto"', '"Oxygen-Sans"', '"Ubuntu"', '"Cantarell"', '"Helvetica Neue"', sans-serif, '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"' !default;
 
-$stack_display: '"Red Hat Display"', -apple-system, BlinkMacSystemFont, '"Segoe UI"', '"Roboto"', '"Oxygen-Sans"', '"Ubuntu"', '"Cantarell"', '"Helvetica Neue"', sans-serif, '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"' !default;
-
-$stack_monospace: '"Red Hat Mono"', '"Source Code Pro"', '"Roboto Mono"', '"Fira Code"', '"Liberation Mono"', '"Inconsolata"', '"Menlo"', '"Monaco"', '"Consolas"', '"Cascadia Mono"', '"Segoe UI Mono"', '"Oxygen Mono"', '"Ubuntu Monospace"', '"Fira Mono"', '"Droid Sans Mono"', '"Courier New"', '"Courier"', ui-monospace, monospace, '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"' !default;
+$monospace: '"Red Hat Mono"', '"Source Code Pro"', '"Roboto Mono"', '"Fira Code"', '"Liberation Mono"', '"Inconsolata"', '"Menlo"', '"Monaco"', '"Consolas"', '"Cascadia Mono"', '"Segoe UI Mono"', '"Oxygen Mono"', '"Ubuntu Monospace"', '"Fira Mono"', '"Droid Sans Mono"', '"Courier New"', '"Courier"', ui-monospace, monospace, '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"' !default;
 
 // Map stacks
 // ------------------------------------------------
 $stacks: (
-	'general'   : $stack_general,
-	'secondary' : $stack_secondary,
-	'display'   : $stack_display,
-	'monospace' : $stack_monospace
+	'general'   : $general,
+	'display'   : $display,
+	'monospace' : $monospace
 ) !default;
