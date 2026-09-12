@@ -76,7 +76,7 @@
 	--bl-body--font-family: var( --bl-fonts--general-stack );
 	--bl-body--font-size: 1rem;
 	--bl-body--line-height: 1.525;
-	--bl-body--letter-spacing: 0.025em;
+	--bl-body--letter-spacing: normal;
 ;
 	--bl-body--bg-color: #ffffff;
 	--bl-body--bg-color--dark: #{c.$near_black};
@@ -108,8 +108,8 @@
 	// ------------------------------------------------
 	--bl-heading-primary--font-family: var( --bl-fonts--display-stack );
 	--bl-heading-primary--font-size: 2.25rem;
-	--bl-heading-primary--font-weight: 550;
-	--bl-heading-primary--letter-spacing: -0.025em;
+	--bl-heading-primary--font-weight: 700;
+	--bl-heading-primary--letter-spacing: 0.015em;
 	--bl-heading-secondary--font-size: 1.5rem;
 	--bl-heading-secondary--font-weight: 600;
 	--bl-heading-primary--text-color: var( --bl-color--one--dark );
